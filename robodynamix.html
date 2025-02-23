@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboDynamiX - The Future of Robotics</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+        body {
+            background: linear-gradient(to right, black, purple);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 100px;
+            animation: slideIn 1.5s ease-out;
+        }
+        h1, h2, h3 {
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+            animation: shine 2s infinite alternate;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+            box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.5);
+        }
+        .section:hover {
+            transform: scale(1.05);
+        }
+        .coming-soon {
+            font-size: 24px;
+            color: #FFD700;
+            margin-top: 20px;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+        }
+        .socials a {
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px;
+            transition: color 0.3s;
+        }
+        .socials a:hover {
+            color: #ff4500;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes shine {
+            from { text-shadow: 0 0 10px #FFD700; }
+            to { text-shadow: 0 0 25px #FFD700; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay>
+        <source src="welcome.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <img src="logo.png" alt="RoboDynamiX Logo" class="logo">
+    <div class="container">
+        <h1>Welcome to RoboDynamiX – The Future of Robotics</h1>
+        
+        <div class="section">
+            <h2>About RoboDynamiX</h2>
+            <p>RoboDynamiX is an upcoming robotics company dedicated to revolutionizing industries with cutting-edge automation and AI-powered solutions.</p>
+            <p>Founded by <strong>Parth Bhamaniya</strong>, RoboDynamiX aims to make a real impact on the world.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Our Vision</h2>
+            <p>🌍 To create intelligent robotic solutions that enhance lives and industries.</p>
+            <p>🚀 To develop AI-powered systems for healthcare, farming, and automation.</p>
+            <p>🤖 To build a community of robotics enthusiasts and innovators.</p>
+        </div>
+        
+        <div class="section">
+            <h2>The Future of RoboDynamiX</h2>
+            <p>✅ AI-powered robotic solutions for industries and emergency services.</p>
+            <p>✅ Affordable automation tools for small businesses and farmers.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Meet the Founder: Parth Bhamaniya</h2>
+            <p>Hello, I am <strong>Parth Bhamaniya</strong>, a robotics engineering student and future entrepreneur. My dream is to launch <strong>RoboDynamiX</strong> and revolutionize industries through robotics.</p>
+        </div>
+        
+        <div class="section socials">
+            <h2>Follow My Journey</h2>
+            <p>📺 <a href="#">YouTube: @theparthbhamaniyavlog</a></p>
+            <p>📌 <a href="#">Instagram & Social Media: @robodynamix</a></p>
+        </div>
+        
+        <div class="coming-soon">🚀 RoboDynamiX is Coming Soon! Stay Tuned! 🚀</div>
+    </div>
+</body>
+</html>
